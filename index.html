@@ -32,13 +32,12 @@ footer{color:var(--muted);font-size:14px;margin-top:56px}
 
   <h2>Ce que fait l'app</h2>
   <p>Relu lit le texte de votre presse-papiers quand l'app est au premier plan (et uniquement s'il contient du texte, ce qu'iOS permet de vérifier sans le lire), le corrige et remet le texte corrigé dans le presse-papiers. La correction se fait soit sur l'iPhone, avec le modèle d'Apple Intelligence (aucune connexion), soit chez Anthropic (<code>api.anthropic.com</code>) avec votre clé, selon le réglage choisi. Rien n'est lu en arrière-plan.</p>
-  <p>Le raccourci « Corriger le presse-papiers » (Toucher le dos, bouton Action, Siri) et l'extension de partage font la même chose sans ouvrir l'écran : ils lisent le texte que vous leur confiez, et lui seul.</p>
 
   <h2>Clavier Relu</h2>
-  <p>iOS demande l'« accès complet » pour qu'un clavier puisse lire votre clé dans le trousseau et joindre le correcteur. Le clavier Relu ne lit le champ en cours que lorsque vous touchez « Corriger », n'enregistre aucune frappe, et n'envoie le texte qu'au correcteur choisi.</p>
+  <p>iOS demande l'« accès complet » pour qu'un clavier puisse lire votre clé dans le trousseau et joindre le correcteur. Le clavier Relu ne lit que le texte que vous avez surligné, au moment où vous touchez « Corriger la sélection », n'enregistre aucune frappe, et n'envoie ce texte qu'au correcteur choisi.</p>
 
   <h2>Votre clé Anthropic</h2>
-  <p>La clé est facultative sur un iPhone compatible avec Apple Intelligence. Vous la créez sur <a href="https://console.anthropic.com">console.anthropic.com</a>. Relu la range dans le trousseau iOS de l'appareil, partagé avec son clavier et son extension de partage (jamais synchronisé iCloud), et ne l'envoie qu'à Anthropic. Le réglage « Retirer » l'efface. L'usage de l'API est facturé par Anthropic sur votre compte, selon <a href="https://www.anthropic.com/legal/consumer-terms">leurs conditions</a> et <a href="https://www.anthropic.com/legal/privacy">leur politique de confidentialité</a>, qui s'appliquent au traitement de vos textes.</p>
+  <p>La clé est facultative sur un iPhone compatible avec Apple Intelligence. Vous la créez sur <a href="https://console.anthropic.com">console.anthropic.com</a>. Relu la range dans le trousseau iOS de l'appareil, partagé avec son clavier (jamais synchronisé iCloud), et ne l'envoie qu'à Anthropic. Le réglage « Retirer » l'efface. L'usage de l'API est facturé par Anthropic sur votre compte, selon <a href="https://www.anthropic.com/legal/consumer-terms">leurs conditions</a> et <a href="https://www.anthropic.com/legal/privacy">leur politique de confidentialité</a>, qui s'appliquent au traitement de vos textes.</p>
 
   <h2>Vos textes</h2>
   <p>Relu ne journalise pas vos textes et ne les transmet à personne d'autre qu'Anthropic, et seulement avec Éclair ou Précis. Si l'historique est activé (réglage « Garder l'historique »), les dix derniers textes corrigés restent sur cet iPhone, exclus des sauvegardes, effaçables à l'unité ou en totalité ; le désactiver les efface. Sinon, le texte ne vit que dans la mémoire de l'app pendant que vous la regardez, et dans votre presse-papiers.</p>
