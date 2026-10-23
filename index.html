@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relu, politique de confidentialité</title>
+<style>
+:root{--paper:#F6F2EA;--ink:#17213A;--muted:#5F677A;--coral:#E2512F;--card:#fff;--line:#E4DED3}
+@media (prefers-color-scheme: dark){:root{--paper:#0F1420;--ink:#F2EFE9;--muted:#A3ABBD;--coral:#FF6B4A;--card:#1A2233;--line:#2A3447}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,system-ui,"Inter","Segoe UI",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:48px 20px 80px}
+h1{font-size:40px;letter-spacing:-1.2px;margin:0 0 6px;font-weight:800}
+h2{font-size:22px;margin:40px 0 10px;letter-spacing:-0.3px}
+p,li{font-size:17px}
+.lead{color:var(--muted);font-size:19px;margin:0 0 32px}
+.brand{font-weight:800;font-size:28px;letter-spacing:-0.8px;margin-bottom:28px}
+.brand span{color:var(--coral)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin:24px 0}
+a{color:var(--ink)}
+footer{color:var(--muted);font-size:14px;margin-top:56px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Relu<span>.</span></div>
+  <h1>Politique de confidentialité</h1>
+  <p class="lead">Relu n'a pas de serveur. La version courte : vos textes vont de votre iPhone à l'API d'Anthropic avec votre propre clé, et reviennent corrigés. Relu ne les voit pas.</p>
+
+  <div class="card">
+    <p><strong>Relu ne collecte aucune donnée.</strong> Pas de compte, pas d'analytique, pas de publicité, pas de SDK tiers, pas de serveur appartenant à Relu. Les seules données qui quittent votre téléphone sont le texte que vous corrigez, envoyé à Anthropic avec la clé API que vous avez vous-même créée.</p>
+  </div>
+
+  <h2>Ce que fait l'app</h2>
+  <p>Relu lit le texte de votre presse-papiers quand l'app est au premier plan (et uniquement s'il contient du texte, ce qu'iOS permet de vérifier sans le lire), l'envoie à l'API d'Anthropic (<code>api.anthropic.com</code>) avec votre clé, reçoit le texte corrigé et le remet dans le presse-papiers. Rien n'est lu en arrière-plan.</p>
+
+  <h2>Votre clé Anthropic</h2>
+  <p>Vous créez la clé sur <a href="https://console.anthropic.com">console.anthropic.com</a>. Relu la range dans le trousseau iOS de l'appareil (jamais synchronisée iCloud) et ne l'envoie qu'à Anthropic. Le réglage « Retirer » l'efface. L'usage de l'API est facturé par Anthropic sur votre compte, selon <a href="https://www.anthropic.com/legal/consumer-terms">leurs conditions</a> et <a href="https://www.anthropic.com/legal/privacy">leur politique de confidentialité</a>, qui s'appliquent au traitement de vos textes.</p>
+
+  <h2>Vos textes</h2>
+  <p>Relu ne stocke, ne journalise et ne transmet vos textes à personne d'autre qu'Anthropic. Le texte original et le texte corrigé ne vivent que dans la mémoire de l'app pendant que vous la regardez, et dans votre presse-papiers.</p>
+
+  <h2>Réglages</h2>
+  <p>Vos préférences (modèle Éclair ou Précis, correction à l'ouverture, copie automatique, retour haptique) sont enregistrées sur l'appareil uniquement.</p>
+
+  <h2>Enfants</h2>
+  <p>Relu ne s'adresse pas spécifiquement aux enfants et ne collecte aucune donnée, quel que soit l'âge de l'utilisateur.</p>
+
+  <h2>Modifications</h2>
+  <p>Si cette politique change, la nouvelle version est publiée à cette adresse avec sa date. Dernière mise à jour : octobre 2026.</p>
+
+  <h2>Contact</h2>
+  <p>Pierrick Coulon · <a href="mailto:coulonpierrick@gmail.com">coulonpierrick@gmail.com</a> · <a href="support.html">Assistance</a></p>
+
+  <footer>Relu est édité par Pierrick Coulon, Paris. Relu n'est pas affilié à Anthropic.</footer>
+</main>
+</body>
+</html>

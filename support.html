@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relu, assistance</title>
+<style>
+:root{--paper:#F6F2EA;--ink:#17213A;--muted:#5F677A;--coral:#E2512F;--card:#fff;--line:#E4DED3}
+@media (prefers-color-scheme: dark){:root{--paper:#0F1420;--ink:#F2EFE9;--muted:#A3ABBD;--coral:#FF6B4A;--card:#1A2233;--line:#2A3447}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,system-ui,"Inter","Segoe UI",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:48px 20px 80px}
+h1{font-size:40px;letter-spacing:-1.2px;margin:0 0 6px;font-weight:800}
+h2{font-size:22px;margin:36px 0 8px;letter-spacing:-0.3px}
+p,li{font-size:17px}
+.lead{color:var(--muted);font-size:19px;margin:0 0 32px}
+.brand{font-weight:800;font-size:28px;letter-spacing:-0.8px;margin-bottom:28px}
+.brand span{color:var(--coral)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin:24px 0}
+a{color:var(--ink)}
+footer{color:var(--muted);font-size:14px;margin-top:56px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Relu<span>.</span></div>
+  <h1>Assistance</h1>
+  <p class="lead">Une question, un bug, une correction qui vous semble fausse : écrivez à <a href="mailto:coulonpierrick@gmail.com">coulonpierrick@gmail.com</a>. Réponse sous quelques jours.</p>
+
+  <h2>iOS me demande « Autoriser le collage ? » à chaque fois</h2>
+  <p>C'est une protection d'iOS 16 et suivants pour toute app qui lit le presse-papiers. Pour ne plus la voir : Réglages › Relu › Coller depuis d'autres apps › <strong>Autoriser</strong>. Relu ne lit le presse-papiers que lorsqu'il est à l'écran et qu'il contient du texte.</p>
+
+  <h2>Où trouver ma clé Anthropic ?</h2>
+  <p>Sur <a href="https://console.anthropic.com/settings/keys">console.anthropic.com › API keys</a>, bouton « Create key ». Copiez-la, revenez dans Relu : elle est détectée. Elle commence par <code>sk-ant-</code>. L'usage est facturé par Anthropic sur votre compte, quelques centimes pour des centaines de messages ; un plafond de dépense se règle dans la console.</p>
+
+  <h2>« Votre clé Anthropic a été refusée »</h2>
+  <p>La clé a été révoquée ou votre compte Anthropic n'a plus de crédit. Vérifiez dans la console, puis Réglages › Retirer et liez une nouvelle clé.</p>
+
+  <h2>Relu a reformulé mon texte</h2>
+  <p>Ce n'est pas censé arriver : Relu corrige, il ne réécrit pas. « Remettre l'original » remet votre texte dans le presse-papiers. Envoyez-nous l'original et la version corrigée, ça nous aide à resserrer la consigne.</p>
+
+  <h2>Rien ne se passe à l'ouverture</h2>
+  <p>Vérifiez que le presse-papiers contient bien du texte (pas une image ni un lien seul) et que « Corriger dès l'ouverture » est activé dans les réglages. Le bouton « Coller et corriger » force la lecture.</p>
+
+  <h2>Supprimer mes données</h2>
+  <p>Relu ne stocke rien hors de votre appareil. Réglages › Retirer efface la clé ; supprimer l'app efface le reste.</p>
+
+  <div class="card"><p style="margin:0">Politique de confidentialité : <a href="index.html">relu-legal</a>.</p></div>
+
+  <footer>Relu est édité par Pierrick Coulon, Paris. Relu n'est pas affilié à Anthropic.</footer>
+</main>
+</body>
+</html>
